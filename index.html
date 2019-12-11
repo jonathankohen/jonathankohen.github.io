@@ -2,10 +2,10 @@
 <html>
 
 <head>
-  
+
   <meta charset="utf-8" />
   <title>Monk's Cafe</title>
-  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
@@ -14,28 +14,33 @@
       <p id="title">Monk's Cafe</p>
       <p id="subtitle">"The Coffee Shop"</p>
       <img id="topImage" src="http://circuits-assets.generalassemb.ly/prod/asset/5475/toms-restaurant.jpg"
-      alt="Restaurant Outside"></img>
+        alt="Restaurant Outside"></img>
     </div>
 
-    <section class="section-1">
-      <h2>Reservations</h2>
-        <div class="whole-box-left">
-          <form class="just-reservation-form">
-            <p id="mar">Make a Reservation</p>
-            <div class="form-header1">
-              <label>Name:</label>
-              <input type="text">
+    <h2>Reservations</h2>
+
+    <div class="section-1">
+        <div id="box-1">
+          <form>
+            <p class="box-titles">Make a Reservation</p>
+            <div>
+              <label class='input-w' for='user-name-input'>
+                <span class='label'>Name</span>
+                <input class='input' type='text' id='user-name-input' placeholder='Please enter your first and last name here.'>
+              </label>
             </div>
-            <div class="form-header2">
-              <label>Day:</label>
-              <input type="text">
+            <div>
+              <label class='input-w' for='user-day-input'>
+                <span class='label' id="day">Day</span>
+                <input class='input' type='text' id='user-day-input' placeholder='Please enter your desired date.'>
+              </label>
             </div>
             <button class="confirm" type="button">Confirm</button>
           </form>
         </div>
-        <div class="whole-box-right">
-          <p id="er">Existing Reservations</p>
-          <table class="table">
+        <div id="box-2">
+          <p class="box-titles">Existing Reservations</p>
+          <table>
             <thead>
               <tr>
                 <th>Name</th>
@@ -51,29 +56,32 @@
             </tbody>
           </table>
         </div>
-        <div class="clear-floats"></div>
-    </section>
+    </div>
+    <div class="clear"></div>
 
+      <section class="section-2">
+        <h2>Come Dine with Us</h2>
+        <div id="map"></div>
+      </section>
 
+      <section class="section-3">
+        <h2>Customer Reviews</h2>
+        <img id="jerry" src="http://circuits-assets.generalassemb.ly/prod/asset/5474/jerry.jpg" alt="restaurant-inside">
+        <p id="review-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, laboriosam modi perferendis
+          adipisci sed corrupti inventore omnis quibusdam quod maiores earum ratione temporibus nam doloribus sunt
+          voluptatum neque perspiciatis qui.</p>
+      </section>
 
-    <section class="section-2">
-      <p id="cdwu">Come Dine with Us</p>
-      <div id="map"></div>
-    </section>
-
-    <section class="section-3">
-      <h2>Customer Reviews</h2>
-      <img id="jerry" src="http://circuits-assets.generalassemb.ly/prod/asset/5474/jerry.jpg" alt="restaurant-inside">
-      <p id="review-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, laboriosam modi perferendis adipisci sed corrupti inventore omnis quibusdam quod maiores earum ratione temporibus nam doloribus sunt voluptatum neque perspiciatis qui.</p>
-    </section>
-
-  </div> <!--End of container-->
+    </div>
+    <!--End of container-->
 
   <div class="scripts">
     <script src="js/jquery-3.0.0.js"></script>
     <script src="js/main.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxB6edv_mfNORl__WSD8-A_yx-hEx3sz8&callback=initMap"></script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxB6edv_mfNORl__WSD8-A_yx-hEx3sz8&callback=initMap"></script>
   </div>
 
-  </body>
+</body>
+
 </html>
