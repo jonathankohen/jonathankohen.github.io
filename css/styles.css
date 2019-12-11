@@ -1,12 +1,4 @@
-/* Global variables */
-html {
-  box-sizing: border-box;
-}
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
+/* Global */
 .container {
   width: 80%;
   margin: auto;
@@ -17,7 +9,6 @@ h2 {
   font-style: oblique;
   color: #202020;
   font-size: 24;
-  text-decoration-line: underline;
 }
 p {
   margin-bottom: 5px;
@@ -32,6 +23,25 @@ body {
   border: #202020;
   border-style: groove;
   border-width: 30px;
+}
+.input {
+  display: flex;
+  flex-direction: row;
+  
+}
+label {
+  display: block;
+  box-sizing: border-box;
+}
+.clear {
+  clear: both;
+}
+.box-titles {
+	color: #555;
+	text-align: center;
+	font-weight: bolder;
+	margin-bottom: 20px;
+	font-size: 18px;
 }
 /* Showcase (top of page) */
 .showcase {
@@ -69,9 +79,11 @@ body {
 
 /* Section 1 */
 .section-1 {
-  display: inline;
+  display: flex;
+  flex-direction: row;
   grid-column: 2;
   grid-row: 1;
+  align-self: center;
 }
 #box-1 {
   display: fixed;
@@ -99,30 +111,6 @@ body {
   margin: 20px;
   margin-bottom: 50px;
 }
-.clear {
-  clear: both;
-}
-.box-titles {
-	color: #555;
-	text-align: center;
-	font-weight: bolder;
-	margin-bottom: 20px;
-	font-size: 18px;
-}
-.input {
-	display: block;
-	float: right;
-	width : 235px;
-	margin: 0;
-	box-sizing: border-box;
-}
-label {
-	display: block;
-	float: left;
-	clear: both;
-	font-size: 13;
-	box-sizing: border-box;
-}
 button {
   width: 100%;
   background: #202020;
@@ -139,7 +127,9 @@ button:hover {
 /* Section 2 */
 table {
 	margin: auto;
-	margin-bottom: 20px;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+  width: 100%;
 }
 th,
 td {
@@ -147,6 +137,7 @@ td {
   text-align: left;
   font-size: 14px;
   font-style: italic;
+  padding: 8px;
 }
 #it-me {
 	font-style: normal;
