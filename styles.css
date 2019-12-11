@@ -1,80 +1,22 @@
-body{
+body {
 	background-color:#f4f4f4;
 	color:#555;
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:16px;
 	line-height:1.6em;
-    margin:0;
+	margin:0;
 }
 
-.container{
-	width: 80%;
+.container {
+    width:80%;
 	margin:auto;
+	overflow:hidden;
 }
 
-.reservations {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 10%;
-}
-
-.box-1 {
-    float: left;
-    border: 1px solid #555;
-    padding: 10px;
-    box-sizing: border-box;
-}
-
-.box-2 {
-    float: right;
-    border: 1px solid #555;
-    padding: 10px;
-    box-sizing: border-box;
-}
-
-.clear {
-    clear: both;
-}
-
-h2 {
-    text-align: center;
-    padding-bottom: 30px;
-    padding-top: 30px;
-}
-
-p{
-    text-align: center;
-    font-weight: bold;
-}
-
-input {
-    width: 100%;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-.form-group {
-    padding-bottom: 20px
-}
-
-button {
-    width: 100%;
-    background: #555;
-    color: #fff;
-}
-
-#main-header {
+.showcase {
     text-align: center;
 }
 
-#restaurant-name {
-    margin-bottom: 0%;
-}
-
-#subtitle {
-    margin-top: 0%
-}
-
-#topImage {
-    width: 100%;
+#title {
+    padding-bottom: 0;
 }
