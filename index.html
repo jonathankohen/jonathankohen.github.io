@@ -17,25 +17,26 @@
         alt="Restaurant Outside"></img>
     </div>
 
+    <br>
+    
     <h2>Reservations</h2>
 
     <div class="section-1">
         <div id="box-1">
           <form>
             <p class="box-titles">Make a Reservation</p>
+
             <div>
-              <label class='input-w' for='user-name-input'>
-                <span class='label'>Name</span>
-                <input class='input' type='text' id='user-name-input' placeholder='Please enter your first and last name here.'>
-              </label>
+              <label for="Name">Name</label>
+              <input class='input' type='text' placeholder='Please enter your first and last name here.'>
             </div>
+
             <div>
-              <label class='input-w' for='user-day-input'>
-                <span class='label' id="day">Day</span>
-                <input class='input' type='text' id='user-day-input' placeholder='Please enter your desired date.'>
-              </label>
+              <label for="Day">Day</label>
+              <input class='input' type='text' placeholder='Please enter your desired date.'>
             </div>
-            <button class="confirm" type="button">Confirm</button>
+
+            <button type="button">Confirm</button>
           </form>
         </div>
         <div id="box-2">
@@ -43,22 +44,26 @@
           <table>
             <thead>
               <tr>
-                <th>Name</th>
-                <th>Day</th>
+                <th id="th-1">Name</th>
+                <th class="spacer"></th>
+                <th id="th-2">Day</th>
               </tr>
             </thead>
             <tbody>
               <!--Data will go here-->
+              
               <tr>
-                <td>Example1</td>
-                <td>Example2</td>
+                <td id="it-me">Jonathan Kohen</td>
+                <th class="spacer"></th>
+                <td id="it-me">Monday</td>
               </tr>
             </tbody>
           </table>
         </div>
     </div>
+    <br>
     <div class="clear"></div>
-
+    
       <section class="section-2">
         <h2>Come Dine with Us</h2>
         <div id="map"></div>
