@@ -9,7 +9,10 @@ html {
 }
 h2 {
   text-align: center;
-  font-style: oblique
+  font-style: oblique;
+  color: #202020;
+  font-size: 24;
+
 }
 p {
   margin-bottom: 5px;
@@ -93,6 +96,14 @@ body {
 	flex-direction: row;
 	align-items: center;
 }
+.input {
+	flex-grow: 1;
+	max-width: 450px;
+}
+#day {
+	margin-right: 7.7%;
+	padding-right: 0;
+}
 .label,
 .input {
 	width: auto;
@@ -103,16 +114,15 @@ body {
 	min-width: 10px;
 	font-size: 13px
 }
-.input {
-	flex-grow: 1;
-	max-width: 450px
-}
-#day {
-	padding-right: 13px;
-}
 .confirm {
 	width: 100%;
 	background: #202020;
 	color: #f4f4f4;
-	margin-top: 20px
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+.confirm:hover {
+	background: #f4f4f4;
+	color: #202020
 }
