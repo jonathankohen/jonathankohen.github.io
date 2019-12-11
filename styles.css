@@ -1,3 +1,51 @@
+.clear-floats {
+	clear: both;
+}
+
+p {
+	margin-bottom: 5px;
+}
+
+h2 {
+	text-align: center;
+}
+
+#title {
+	font-size: 40px;
+	color: 	#202020;
+	font-weight: bold;
+	text-align: center;
+}
+
+#subtitle {
+	font-size: 24;
+	color: #202020;
+	font-weight: bold;
+	font-style: italic;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+#topImage {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	align-content: center;
+	padding: 20px, 20px;
+	border: royalblue;
+	border-style: solid;
+	border-width: 100%;
+	box-sizing: border-box;
+
+}
+
+.container {
+    width:80%;
+	margin:auto;
+	overflow:hidden;
+}
+
 body {
 	background-color:#f4f4f4;
 	color:#555;
@@ -7,16 +55,32 @@ body {
 	margin:0;
 }
 
-.container {
-    width:80%;
-	margin:auto;
-	overflow:hidden;
-}
-
 .showcase {
-    text-align: center;
+	border: #202020;
+	border-width: 3px;
+	border-style: solid;
+	padding: 20px;
+	box-sizing: border-box;
 }
 
-#title {
-    padding-bottom: 0;
+.both-boxes {
+	width: 1fr, 40px, 1fr;
+}
+
+.whole-box-left {
+	float: left;
+	border: #202020;
+	border-width: 1px;
+	border-style: solid;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.whole-box-right {
+	float: right;
+	border: #202020;
+	border-width: 1px;
+	border-style: solid;
+	padding: 10px;
+	box-sizing: border-box;
 }
