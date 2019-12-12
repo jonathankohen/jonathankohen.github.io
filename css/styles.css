@@ -2,6 +2,7 @@ body {
   padding: 40px;
   border: 15px double #85a8c7;
   background: #f2f2f2;
+  background-blend-mode: soft-light;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
@@ -29,10 +30,8 @@ h4 {
   margin-bottom: 60px;
   font-optical-sizing: true;
 }
-#top-image:hover {
-  
-}
 h1 {
+  text-align: center;
   font-family: great vibes;
   font-size: 80px;
   color: #333333;

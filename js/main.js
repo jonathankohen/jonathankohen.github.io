@@ -8,3 +8,13 @@ function bleh(e) {
       <td class="data table-hover table-light">${date}</td>`);
   reservations.appendChild(newReservation);
 }
+
+function initMap() {
+  // The location of Uluru
+  var location = {lat: 40.8054491, lng: -73.9654415};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 7, center: location});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: location, map: map});
+}
