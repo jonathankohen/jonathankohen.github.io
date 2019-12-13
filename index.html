@@ -25,15 +25,36 @@
   </head>
 
   <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark sticky-top mb-lg-5"
+      style="background-color:#85a8c7; font-family: raleway-regular; border-bottom: #1F4261 3px solid;"
+    >
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Menu</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
     <div class="container page-header text-center">
-      <!--SHOWCASE START-->
+      <!--CONTAINER 1 (SHOWCASE) START-->
       <h1 class="page-title">Monk's Cafe</h1>
       <h4><i>"The Coffee Shop"</i></h4>
     </div>
-    <!--SHOWCASE END-->
+    <!--CONTAINER 1 END-->
 
     <div class="container">
-      <!--MAIN IMAGE START-->
+      <!--CONTAINER 2 (MAIN IMG) START-->
       <img
         class="img-fluid"
         id="top-image"
@@ -41,10 +62,10 @@
         alt="Restaurant Exterior"
       />
     </div>
-    <!--MAIN IMAGE END-->
+    <!--CONTAINER 2 (MAIN IMG) END-->
 
     <div class="container">
-      <!--CONTAINER START-->
+      <!--CONTAINER 3 (RES) START-->
 
       <div class="row">
         <!--ROW START-->
@@ -52,72 +73,85 @@
         <h1 class="text-center" id="res">Reservations</h1>
 
         <div class="col-md-4" id="kngarly">
-          <!--col-md-4-1 AND FORM START-->
+          <!--COL 1 AND FORM START-->
 
           <h5 class="form-label">Make a reservation</h5>
 
-            <div class="form-group" id="">
-              <label class="box-titles" for="name">Name</label>
-              <input type="text" class="name form-control" />
-            </div>
+          <div class="form-group" id="">
+            <label class="box-titles" for="name">Name</label>
+            <input type="text" class="name form-control" />
+          </div>
 
-            <div class="form-group">
-              <label class="box-titles" for="date">Date</label>
-              <input type="text" class="form-control" id="date" />
-            </div>
+          <div class="form-group">
+            <label class="box-titles" for="date">Date</label>
+            <input type="text" class="form-control" id="date" />
+          </div>
 
-            <button onclick="bleh(e)" class="btn">Submit</button>
-          
+          <button onclick="bleh(e)" class="btn">Submit</button>
         </div>
-        <!--col-md-4-1 AND FORM END-->
+        <!--COL 1 AND FORM END-->
 
         <div class="col-md-4" id="blank"></div>
-        <!--col-md-4-2 BLANK-->
+        <!--COL 2 BLANK-->
 
+        <!--COL-3 TABLE START-->
 
-          <!--col-md-4-3 TABLE-->
+        <table class="col-md-4 table">
+          <thead>
+            <tr>
+              <th class="table-head" scope="row" colspan="2">
+                <h5 id="er">Existing reservations</h5>
+              </th>
+            </tr>
 
-          <table class="col-md-4 table">
-            <thead>
-              <tr>
-                <th class="table-head" scope="row" colspan="2"><h5 id="er">Existing reservations</h5></th>
+            <tr>
+              <th
+                scope="col-md-4"
+                class="box-titles"
+                id="name-2"
+                scope="col-md-4"
+              >
+                Name
+              </th>
+              <th
+                scope="col-md-4"
+                class="box-titles"
+                id="date-2"
+                scope="col-md-4"
+              >
+                Date
+              </th>
+            </tr>
+          </thead>
+
+          <tbody id="bleh-body">
+            <div>
+              <tr class="row-hover">
+                <td class="data">Jonathan Kohen</td>
+                <td class="data">12/14/19</td>
               </tr>
+            </div>
 
-              <tr>
-                <th scope="col-md-4" class="box-titles" id="name-2" scope="col-md-4">Name</th>
-                <th scope="col-md-4" class="box-titles" id="date-2" scope="col-md-4">Date</th>
+            <div>
+              <tr class="row-hover">
+                <td class="data">Jacob Fine</td>
+                <td class="data">12/12/19</td>
               </tr>
-            </thead>
+            </div>
 
-            <tbody id="bleh-body">
-              <div>
-                <tr class="row-hover">
-                  <td class="data">Jonathan Kohen</td>
-                  <td class="data">12/14/19</td>
-                </tr>
-              </div>
-
-              <div>
-                <tr class="row-hover">
-                  <td class="data">Jacob Fine</td>
-                  <td class="data">12/12/19</td>
-                </tr>
-              </div>
-
-              <div>
-                <tr class="row-hover">
-                  <td class="data">Maxwell Smith</td>
-                  <td class="data">01/01/20</td>
-                </tr>
-              </div>
-            </tbody>
-          </table>
-        </div>
-        <!--col-md-4-3 TABLE END-->
-
+            <div>
+              <tr class="row-hover">
+                <td class="data">Maxwell Smith</td>
+                <td class="data">01/01/20</td>
+              </tr>
+            </div>
+          </tbody>
+        </table>
+      </div>
+      <!--COL-3 TABLE END-->
       <!--ROW END-->
     </div>
-    <!--CONTAINER END-->
+    <!--CONTAINER 3 (RES) END-->
 
     <div class="container">
       <!--CONTAINER START-->
@@ -141,10 +175,13 @@
             <ul>
               <li>
                 <blockquote class="blockquote text-right">
-                  <p class="mb-0"><span style="font-family: raleway-extralight;">"A fantastic experience!"</span><span style="font-family: raleway-thinitalic;">&emsp;Rating:&ensp;★★★★</span></p>
-                  
-                  
-                  
+                  <p class="mb-0">
+                    <span style="font-family: raleway-extralight;"
+                      >"A fantastic experience!"</span
+                    ><span style="font-family: raleway-thinitalic;"
+                      >&emsp;Rating:&ensp;★★★★</span
+                    >
+                  </p>
                 </blockquote>
               </li>
             </ul>

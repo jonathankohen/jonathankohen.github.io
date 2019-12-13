@@ -1,5 +1,5 @@
-/*STARTER CODE PROVIDED*/
-/* .restaurant-pic {
+/*STARTER CODE PROVIDED
+.restaurant-pic {
 	height: 50vh;
 	background: url('https://i.ytimg.com/vi/7mphrlxJl5k/maxresdefault.jpg');
 	background-size: cover;
@@ -11,8 +11,7 @@
 .reservation {
 	height: 25vh;
 }
-/* add a deli pattern background*/
-/*.reservation-form-container {
+.reservation-form-container {
 	position: relative;
 	height: 100%;
 	background: url('http://ih1.redbubble.net/image.80745362.8983/flat,800x800,075,t.u4.jpg');
@@ -26,10 +25,11 @@
 }
 .restaurant-locator {
 	height: 50vh;
-} */
-
+}
+*/
 
 body {
+  padding-top: 5rem; 
   padding: 40px;
   border: 15px double #85a8c7;
   background: #f2f2f2;
@@ -81,7 +81,6 @@ h5 {
   font-optical-sizing: true;
 }
 .col-md-4 {
-  /* BOTH BOXES */
   display: flexbox;
   flex-direction: row;
   flex-flow: row;
@@ -115,7 +114,7 @@ h5 {
   font-optical-sizing: true;
 }
 table {
-  -webkit-background-clip: padding-box; /* for Safari */
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   border-top: 8px double #85a8c7;
   border-right: 8px double #85a8c7;
@@ -177,7 +176,7 @@ thead {
   border-right: 8px double #85a8c7;
   border-radius: 3px;
 
-  -webkit-background-clip: padding-box; /* for Safari */
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
 
 }
@@ -246,7 +245,7 @@ input:hover {
   border-radius: 0px;
   font-optical-sizing: true;
 }
-.reviews-spacing { /*BOTH IMG AND QUOTE*/
+.reviews-spacing {
   padding: 0;
   margin: 0;
   list-style: none;
