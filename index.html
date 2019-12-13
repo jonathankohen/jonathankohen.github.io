@@ -51,13 +51,12 @@
 
         <h1 class="text-center" id="res">Reservations</h1>
 
-        <div class="col-md" id="kngarly">
-          <!--COL-1 AND FORM START-->
+        <div class="col-md-4" id="kngarly">
+          <!--col-md-4-1 AND FORM START-->
 
-          <h5>Make a reservation</h5>
+          <h5 class="form-label">Make a reservation</h5>
 
-          <div class="form-input" id="form-wrap">
-            <div class="form-group">
+            <div class="form-group" id="">
               <label class="box-titles" for="name">Name</label>
               <input type="text" class="name form-control" />
             </div>
@@ -68,43 +67,45 @@
             </div>
 
             <button onclick="bleh(e)" class="btn">Submit</button>
-          </div>
+          
         </div>
-        <!--COL-1 AND FORM END-->
+        <!--col-md-4-1 AND FORM END-->
 
-        <div class="col-md" id="blank"></div>
-        <!--COL-2 BLANK-->
+        <div class="col-md-4" id="blank"></div>
+        <!--col-md-4-2 BLANK-->
 
-        <div class="col-md" id="blue-here">
-          <!--COL-3 TABLE-->
 
-          <table class="table table-hover">
-            <h5 id="box-2-title">Existing reservations</h5>
+          <!--col-md-4-3 TABLE-->
 
+          <table class="col-md-4 table">
             <thead>
               <tr>
-                <th class="box-titles" id="name-2" scope="col">Name</th>
-                <th class="box-titles" id="date-2" scope="col">Date</th>
+                <th class="table-head" scope="row" colspan="2"><h5 id="er">Existing reservations</h5></th>
+              </tr>
+
+              <tr>
+                <th scope="col-md-4" class="box-titles" id="name-2" scope="col-md-4">Name</th>
+                <th scope="col-md-4" class="box-titles" id="date-2" scope="col-md-4">Date</th>
               </tr>
             </thead>
 
             <tbody id="bleh-body">
               <div>
-                <tr class="target, table-hover, table-light">
+                <tr class="row-hover">
                   <td class="data">Jonathan Kohen</td>
                   <td class="data">12/14/19</td>
                 </tr>
               </div>
 
               <div>
-                <tr class="target, table-hover table-light">
+                <tr class="row-hover">
                   <td class="data">Jacob Fine</td>
                   <td class="data">12/12/19</td>
                 </tr>
               </div>
 
               <div>
-                <tr class="target, table-hover table-light">
+                <tr class="row-hover">
                   <td class="data">Maxwell Smith</td>
                   <td class="data">01/01/20</td>
                 </tr>
@@ -112,8 +113,8 @@
             </tbody>
           </table>
         </div>
-        <!--COL-3 TABLE END-->
-      </div>
+        <!--col-md-4-3 TABLE END-->
+
       <!--ROW END-->
     </div>
     <!--CONTAINER END-->
@@ -195,7 +196,7 @@
 	</script>-->
 
 <!-- navbar -->
-<!--<div id="navbar" class="navbar-collapse navbar-inverse collapse navbar-fixed-top">
+<!--<div id="navbar" class="navbar-col-md-4lapse navbar-inverse col-md-4lapse navbar-fixed-top">
 		<a href="#" class="navbar-brand">Monk's Café</a>
 		<ul class="nav navbar-nav navbar-right">
 		  <li class="active"><a href="#reservation">Reservation</a></li>
@@ -205,7 +206,7 @@
 
 	<div class="container-fluid restaurant-pic">
 		<div class="row">
-			<div class="col-md-12"></div>
+			<div class="col-md-4-md-12"></div>
 		</div>
 	</div>
 
@@ -213,7 +214,7 @@
 
 		<!-- reservation form -->
 <!--<div class="row reservation-form-container">
-			<div class="col-md-12 text-center reservation-form">
+			<div class="col-md-4-md-12 text-center reservation-form">
 				<form class="form-inline reservations">
 				  <div class="form-group">
 				    <input type="text" class="form-control reservation-name" placeholder="Jane Doe">
@@ -237,7 +238,7 @@
 		</div>-->
 
 <!-- reservations -->
-<!--<table class="table table-striped col-md-12 container-fluid">
+<!--<table class="table table-striped col-md-4-md-12 container-fluid">
 			<h4>Reservations</h4>
 			<thead>
 				<th>Name</th>
