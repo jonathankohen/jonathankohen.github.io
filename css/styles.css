@@ -38,6 +38,7 @@ body {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+  font-family: raleway;
 }
 .navbar-nav.navbar-center {
   position: absolute;
@@ -211,6 +212,12 @@ td:hover {
   font-weight: normal;
   background: #9FC2E1;
 }
+td {
+  font-family: raleway-extralightitalic;
+}
+.reservation-names, input {
+  font-family: raleway-lightitalic;
+}
 #map-title {
   margin-top: 3rem;
 }
@@ -256,4 +263,19 @@ td:hover {
   margin-left: 0.5em;
   background: #85a8c7;
   color: #ffffff
+}
+td.reservation-names{
+  vertical-align: middle
+}
+td.reservation-dates{
+  vertical-align: middle
+}
+td.reservation-names.submitted-name {
+  vertical-align: middle;
+}
+td.submitted-date {
+  vertical-align: middle;
+}
+.submitted {
+  background: #fff599
 }

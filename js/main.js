@@ -4,12 +4,14 @@ function bleh() {
   var date = document.getElementById("date").value;
   var newReservation = document.createElement("tr");
 
-  newReservation.innerHTML = `<td>${name}</td><td>${date}</td>`;
+  newReservation.setAttribute("class", "submitted");
+
+  newReservation.innerHTML = `<td class="reservation-names submitted-name">${name}</td><td class="submitted-date">${date}</td>`;
 
   reservations.appendChild(newReservation);
 }
 
-document.getElementById("subtmit-button").onclick = bleh()
+document.getElementById("subtmit-button").onclick = bleh();
 
 function initMap() {
   // The location of Uluru
