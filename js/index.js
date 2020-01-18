@@ -1,16 +1,14 @@
-var database = firebase.database();
-var reservations = document.getElementById("bleh-body");
-var name = document.getElementById("name").value;
-var date = document.getElementById("date").value;
-var newReservation = document.createElement("tr");
-var dbTarget = firebase.database().ref("Reservations");
+const MongoClient = require("mongodb").MongoClient;
+const uri =
+  "mongodb+srv://kay:myRealPassword@cluster0.mongodb.net/test?w=majority";
+const client = new MongoClient(uri, { useNewUrlParser: true });
+const reservations = document.getElementById("bleh-body");
+const name = document.getElementById("name").value;
+const date = document.getElementById("date").value;
+const newReservation = document.createElement("tr");
+const writeUserData = db.collection.insertOne({
+  name: name,
+  date: date
+});
 
-
-export {
-  database,
-  reservations,
-  name,
-  date,
-  newReservation,
-  reservationsListRef,
-};
+export { database, reservations, name, date, newReservation, writeUserData };
