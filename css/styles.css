@@ -1,44 +1,13 @@
-/*STARTER CODE PROVIDED
-.restaurant-pic {
-	height: 50vh;
-	background: url('https://i.ytimg.com/vi/7mphrlxJl5k/maxresdefault.jpg');
-	background-size: cover;
-	background-position: 0 40%;
-}
-.restaurant-info {
-	height: 50vh;
-}
-.reservation {
-	height: 25vh;
-}
-.reservation-form-container {
-	position: relative;
-	height: 100%;
-	background: url('http://ih1.redbubble.net/image.80745362.8983/flat,800x800,075,t.u4.jpg');
-	background-size: cover;
-	background-position: center;
-}
-.reservation-form {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-}
-.restaurant-locator {
-	height: 50vh;
-}
-*/
-
 body {
   margin-top: 0.5rem;
   padding-top: 5rem; 
   padding: 5rem;
   border: 15px double #85a8c7;
   background: #f2f2f2;
-  background-blend-mode: soft-light;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
-  font-family: raleway;
+  font-family: raleway, sans-serif;
 }
 h1 {
   text-align: center;
