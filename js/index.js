@@ -1,14 +1,18 @@
-const MongoClient = require("mongodb").MongoClient;
-const uri =
-  "mongodb+srv://kay:myRealPassword@cluster0.mongodb.net/test?w=majority";
-const client = new MongoClient(uri, { useNewUrlParser: true });
-const reservations = document.getElementById("bleh-body");
-const name = document.getElementById("name").value;
-const date = document.getElementById("date").value;
-const newReservation = document.createElement("tr");
-const writeUserData = db.collection.insertOne({
-  name: name,
-  date: date
-});
+// //Load HTTP module
+// const http = require("http");
+// const hostname = '127.0.0.1';
+// const port = 3000;
 
-export { database, reservations, name, date, newReservation, writeUserData };
+// //Create HTTP server and listen on port 3000 for requests
+// const server = http.createServer((req, res) => {
+
+//   //Set the response HTTP header with HTTP status and Content type
+//   res.statusCode = 200;
+//   res.setHeader('Content-Type', 'text/plain');
+//   res.end('Hello World\n');
+// });
+
+// //listen for request on port 3000, and as a callback function have the port listened on logged
+// server.listen(port, hostname, () => {
+//   console.log(`Server running at http://${hostname}:${port}/`);
+// });

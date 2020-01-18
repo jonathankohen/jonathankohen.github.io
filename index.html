@@ -6,13 +6,18 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Great+Vibes|Lato|Montserrat|PT+Serif|Playfair+Display|Raleway|Raleway+Dots&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Dancing+Script|Great+Vibes|Lato|Montserrat|PT+Serif|Playfair+Display|Raleway|Raleway+Dots&display=swap"
+      rel="stylesheet"
+    />
 
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       crossorigin="anonymous"
     />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/styles.css" />
 
     <title>Monk's Cafe</title>
@@ -200,14 +205,22 @@
       </div>
     </container>
     <!--CONTAINER END-->
-
+    <script>
+      function initMap() {
+        const location = { lat: 28.3852, lng: -81.5639 };
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 14,
+          center: location
+        });
+        const marker = new google.maps.Marker({ position: location, map: map });
+      }
+    </script>
     <script
       async
       defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArzMyyfTKyN0stVG2MwNkeL94L6zSm8P4&callback=initMap"
     ></script>
     <script src="js/bootstrap.min.js"></script>
-    <script type="module" src="index.js"></script>
-    <script type="text/javascript" src="./js/main.js"></script>
+    <script type="text/js" src="./js/main.js"></script>
   </body>
 </html>

@@ -1,32 +1,32 @@
-import {
-  reservations,
-  name,
-  date,
-  newReservation,
-  writeUserData
-} from "index.js";
+var http = require('http');
 
-function bleh() {
-  newReservation.setAttribute("class", "submitted");
+http.createServer(function (req, res) {
+  res.writeHead(200, {'Content-Type': 'text/html'});
+  res.end('Hello World!');
+}).listen(8080);
 
-  newReservation.innerHTML = `<td class="reservation-names submitted-name">${name}</td><td class="submitted-date">${date}</td>`;
-
-  reservations.appendChild(newReservation);
-
-  client.connect(err => {
-    const collection = client.db("reservations").collection("userInput");
-    collection.writeUserData();
-    client.close();
+const MongoClient = require('mongodb').MongoClient;
+const uri = "mongodb+srv://jkohen:KesheT123@cluster0-nflko.gcp.mongodb.net/test?retryWrites=true&w=majority";
+var client = new MongoClient(uri, { useNewUrlParser: true });
+client.connect(err => {
+  const collection = client.db("reservations").collection("userInput");
+  // perform actions on the collection object
+  collection.insertOne({
+    name: name,
+    date: date
   });
-}
+  client.close();
+});
+
 
 document.getElementById("subtmit-button").onclick = bleh();
 
-function initMap() {
-  const location = { lat: 28.3852, lng: -81.5639 };
-  const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 14,
-    center: location
-  });
-  const marker = new google.maps.Marker({ position: location, map: map });
+function bleh() {
+  const reservationsTable = document.getElementById("bleh-body");
+  const name = document.getElementById("name").value;
+  const date = document.getElementById("date").value;
+  const newReservation = document.createElement("tr");
+  newReservation.setAttribute("class", "submitted");
+  newReservation.innerHTML = `<td class="reservation-names submitted-name">${name}</td><td class="submitted-date">${date}</td>`;
+  reservationsTable.appendChild(newReservation);
 }
