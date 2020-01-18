@@ -1,0 +1,24 @@
+{
+  "name": "restaurant-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yonikohen/yonikohen.github.io.git"
+  },
+  "keywords": [],
+  "author": "Jonathan Kohen <jonathan.a.kohen@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yonikohen/yonikohen.github.io/issues"
+  },
+  "homepage": "https://github.com/yonikohen/yonikohen.github.io#readme",
+  "dependencies": {
+    "firebase": "^7.7.0",
+    "jshint": "^2.11.0"
+  }
+}
