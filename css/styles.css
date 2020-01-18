@@ -40,6 +40,31 @@ body {
   margin-right: auto;
   font-family: raleway;
 }
+h1 {
+  text-align: center;
+  font-family: great vibes;
+  font-size: 80px;
+  color: #333333;
+  border-bottom: 10px solid #fff599;
+  width: 100%;
+  font-optical-sizing: true;
+}
+h2 {
+  color: #85a8c7;
+  font-family: great vibes;
+  font-size: 60px;
+  margin-bottom: 5rem;
+  font-optical-sizing: true;
+}
+h3 {
+  font-family: Montserrat;
+  text-align: center;
+}
+h5 {
+  font-family: Montserrat;
+  text-align: center;
+  font-optical-sizing: true;
+}
 .navbar-nav.navbar-center {
   position: absolute;
   left: 50%;
@@ -60,13 +85,6 @@ a.nav-link:hover {
   font-family: raleway-extralight;
   font-optical-sizing: true;
 }
-h4 {
-  color: #85a8c7;
-  font-family: great vibes;
-  font-size: 60px;
-  margin-bottom: 5rem;
-  font-optical-sizing: true;
-}
 #top-image {
   border: 1rem double #1F4261;
   padding: 4px;
@@ -77,24 +95,8 @@ h4 {
   margin-bottom: 3rem;
   font-optical-sizing: true;
 }
-h1 {
-  text-align: center;
-  font-family: great vibes;
-  font-size: 80px;
-  color: #333333;
-  border-bottom: 10px solid #fff599;
-  width: 100%;
-  font-optical-sizing: true;
-}
 #res {
   margin-bottom: 4rem;
-}
-h5 {
-  font-family: raleway-extralight;
-  font-size: 30px;
-  text-align: center;
-
-  font-optical-sizing: true;
 }
 .col{
   display: flexbox;
@@ -136,7 +138,6 @@ table {
 thead {
   background: #6C8FAE;
   color: #ffffff;
-
   padding: -20px;
 }
 #blue-here {
@@ -190,7 +191,6 @@ input:hover {
   align-items: flex-end;
   background: #85a8c7;
   color: #f2f2f2;
-
   font-family: raleway-extralight;
 }
 .btn:hover {
@@ -277,5 +277,5 @@ td.submitted-date {
   vertical-align: middle;
 }
 .submitted {
-  background: #fff599
+  background: #fff599;
 }

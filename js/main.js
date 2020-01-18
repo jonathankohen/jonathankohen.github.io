@@ -1,8 +1,16 @@
 function bleh() {
+  var database = firebase.database();
   var reservations = document.getElementById("bleh-body");
   var name = document.getElementById("name").value;
   var date = document.getElementById("date").value;
   var newReservation = document.createElement("tr");
+  var reservationsListRef = firebase.database().ref("Reservations");
+  var newReservationsListRef = reservationsListRef.push();
+  
+  newReservationsListRef.set({
+    name: name,
+    date: date
+  });
 
   newReservation.setAttribute("class", "submitted");
 
@@ -23,4 +31,4 @@ function initMap() {
   });
   // The marker, positioned at Uluru
   var marker = new google.maps.Marker({ position: location, map: map });
-};
+}

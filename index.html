@@ -15,6 +15,10 @@
       rel="stylesheet"
     />
     <link
+      href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Oswald|Raleway|Raleway+Dots|Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       crossorigin="anonymous"
@@ -28,7 +32,7 @@
     <container class="container page-header text-center">
       <!--CONTAINER 1 (SHOWCASE) START-->
       <h1 class="page-title">Monk's Cafe</h1>
-      <h4><i>"The Coffee Shop"</i></h4>
+      <h2><i>"The Coffee Shop"</i></h2>
     </container>
     <!--CONTAINER 1 END-->
 
@@ -80,20 +84,32 @@
         <div class="col" id="reservation-form">
           <!--COL 1 AND FORM START-->
 
-          <h5 class="form-label">Make a reservation</h5>
+          <h3 class="form-label">Make a reservation</h3>
 
           <div class="form-group">
             <label class="box-titles" for="name">Name</label>
-            <input type="text" class="name form-control" id="name" placeholder="Try me!"/>
+            <input
+              type="text"
+              class="name form-control"
+              id="name"
+              placeholder="Try me!"
+            />
           </div>
 
           <div class="form-group">
             <label class="box-titles" for="date">Date</label>
-            <input type="text" class="form-control" id="date"  placeholder="Me too!"/>
+            <input
+              type="text"
+              class="form-control"
+              id="date"
+              placeholder="Me too!"
+            />
           </div>
 
           <div class="form-group">
-            <button id="submit-button" class="btn" onclick="bleh()">Submit</button>
+            <button id="submit-button" class="btn" onclick="bleh()">
+              Submit
+            </button>
           </div>
         </div>
         <!--COL 1 AND FORM END-->
@@ -107,7 +123,7 @@
             <thead>
               <tr>
                 <th class="table-head" scope="row" colspan="2">
-                  <h5 id="er">Existing reservations</h5>
+                  <h3>Existing reservations</h3>
                 </th>
               </tr>
 
@@ -122,16 +138,15 @@
             </thead>
 
             <tbody id="bleh-body">
-
               <tr>
                 <td class="reservation-names">Design by Jonathan Kohen</td>
                 <td class="reservation-dates">01/17/20</td>
               </tr>
 
               <tr>
-                  <td class="reservation-names">Example Customer</td>
-                  <td class="reservation-dates">01/18/20</td>
-                </tr>
+                <td class="reservation-names">Example Customer</td>
+                <td class="reservation-dates">01/18/20</td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -200,29 +215,7 @@
       </div>
     </container>
     <!--CONTAINER END-->
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
 
-    <!-- TODO: Add SDKs for Firebase products that you want to use
- https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-analytics.js"></script>
-
-    <script>
-      // Your web app's Firebase configuration
-      var firebaseConfig = {
-        apiKey: "AIzaSyD2wzz2Kbb7Roc6skCHJ-1Anp8lkpxsVik",
-        authDomain: "reservation-site-779ee.firebaseapp.com",
-        databaseURL: "https://reservation-site-779ee.firebaseio.com",
-        projectId: "reservation-site-779ee",
-        storageBucket: "reservation-site-779ee.appspot.com",
-        messagingSenderId: "201762051429",
-        appId: "1:201762051429:web:6ce3f05c2ee00df0affd8c",
-        measurementId: "G-TEZT8VNM41"
-      };
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-      firebase.analytics();
-    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
@@ -235,6 +228,49 @@
       defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArzMyyfTKyN0stVG2MwNkeL94L6zSm8P4&callback=initMap"
     ></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+    <!-- <script src="/__/firebase/7.7.0/firebase.js"></script> -->
+
+    <script src="/__/firebase/init.js"></script>
+    <script src="/__/firebase/7.7.0/firebase-database.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyD2wzz2Kbb7Roc6skCHJ-1Anp8lkpxsVik",
+          authDomain: "reservation-site-779ee.firebaseapp.com",
+          databaseURL: "https://reservation-site-779ee.firebaseio.com",
+          projectId: "reservation-site-779ee",
+          storageBucket: "reservation-site-779ee.appspot.com",
+          messagingSenderId: "201762051429",
+          appId: "1:201762051429:web:411eff429f5470d9affd8c",
+          measurementId: "G-HGTVDJWK7J"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.database();
+      </script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var config = {
+        apiKey: "AIzaSyD2wzz2Kbb7Roc6skCHJ-1Anp8lkpxsVik",
+        authDomain: "reservation-site-779ee.firebaseapp.com",
+        databaseURL: "https://reservation-site-779ee.firebaseio.com",
+        storageBucket: "reservation-site-779ee.appspot.com"
+      };
+      firebase.initializeApp(config);
+
+      // Get a reference to the database service
+      var database = firebase.database();
+    </script>
+    <!-- Previously loaded Firebase SDKs-->
+
+    <!-- Initialize Firebase -->
+    <!-- <script src="/__/firebase/init.js"></script> -->
+    -->
   </body>
 </html>
 
