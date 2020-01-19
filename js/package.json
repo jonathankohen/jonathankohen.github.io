@@ -9,6 +9,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "mongodb": "^3.5.1",
     "node-module": "^2.0.0"
   }
 }
