@@ -1,19 +1,8 @@
-/*jshint esversion: 6 */
-
-function es_json() {
-  JSON.parse(data);
-}
-
-var es_JSON = JSON.parse(data);
-alert(es_JSON[0].name);
-alert(es_JSON[0].age);
-alert(es_JSON[1].name);
-alert(es_JSON[1].age);
-
 let name = document.getElementById("name").value;
 let date = document.getElementById("date").value;
 
 function bleh() {
+
   let reservationsTable = document.getElementById("bleh-body");
   let newTableRow = document.createElement("tr");
   newTableRow.setAttribute("class", "submitted");
@@ -22,49 +11,23 @@ function bleh() {
   reservationsTable.appendChild(newTableRow);
 }
 
-bleh();
+const MongoClient = require('mongodb').MongoClient;
+const assert = require('assert');
 
-// let MongoClient = require("mongodb").MongoClient;
-// MongoClient.connect(
-//   "mongodb+srv://jkohen:KesheT123@cluster0-nflko.gcp.mongodb.net/test?retryWrites=true&w=majority",
-//   function(err, client) {
-//     if (err) throw err;
+// Connection URL
+const url = 'mongodb://$[jkohen]:$[KesheT123]@$[hostlist]/$[database]?authSource=$[authSource]';
 
-//     let db = client.db("reservations");
-//     db.collection("userInput")
-//       .find()
-//       .toArray(function(err, result) {
-//         if (err) throw err;
-//         console.log(result);
-//         client.close();
-//       });
-//   }
-// );
-
-var MongoClient = require ('mongodb').MongoClient;
-var url = "mongodb://localhost:27017/";
-
-MongoClient.connect(url, function(err, db) {
-  if (err) throw err;
-  var dbo = db.db("mydb");
-  var myobj = { name: "Company Inc", address: "Highway 37" };
-  dbo.collection("customers").insertOne(myobj, function(err, res) {
-    if (err) throw err;
-    console.log("1 document inserted");
-    db.close();
-  });
+// Use connect method to connect to the Server
+MongoClient.connect(url, function(err, client) {
+  const db = client.db("test");
+  assert.equal(null, err);
+  client.close();
 });
 
-// const uri =
-//   "mongodb+srv://jkohen:KesheT123@cluster0-nflko.gcp.mongodb.net/test?retryWrites=true&w=majority";
-// const client = new MongoClient(uri, { useNewUrlParser: true });
-
-// client.connect(err => {
-//   const collection = client.db("reservations").collection("userInput");
-//   // perform actions on the collection object
-//   collection.insertOne({
-//     name: name,
-//     date: date
-//   });
-//   client.close();
-// });
+db.collection('userInput').insertOne({
+  name: name,
+  date: date
+})
+.then(function(result) {
+  // process result
+})
