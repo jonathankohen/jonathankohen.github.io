@@ -1,10 +1,19 @@
 /*jshint esversion: 6 */
 
-/*global let name = document.getElementById("name").value;*/
+function es_json() {
+  JSON.parse(data);
+}
+
+var es_JSON = JSON.parse(data);
+alert(es_JSON[0].name);
+alert(es_JSON[0].age);
+alert(es_JSON[1].name);
+alert(es_JSON[1].age);
+
+let name = document.getElementById("name").value;
+let date = document.getElementById("date").value;
 
 function bleh() {
-  
-  let date = document.getElementById("date").value;
   let reservationsTable = document.getElementById("bleh-body");
   let newTableRow = document.createElement("tr");
   newTableRow.setAttribute("class", "submitted");
