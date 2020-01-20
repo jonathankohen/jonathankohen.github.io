@@ -9,12 +9,3 @@ function bleh() {
 
   reservationsTable.appendChild(newTableRow);
 }
-
-db.collection("userInput")
-  .insertOne({
-    name: name,
-    date: date
-  })
-  .then(function(result) {
-    // process result
-  });
