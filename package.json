@@ -1,19 +1,8 @@
 {
-  "name": "restaurant-project-package",
-  "version": "5.6.0",
+  "name": "restaurant-project",
+  "version": "1.0.0",
+  "description": "Restaurant project Node",
   "main": "index.js",
-  "dependencies": {
-    "docker": "^1.0.0",
-    "eslint": "^6.8.0",
-    "firebase": "^7.7.0",
-    "jshint": "^2.11.0",
-    "mongodb": "^3.5.1",
-    "mongodb-client-encryption": "^1.0.1",
-    "new_module": "^1.0.0",
-    "requirejs": "^2.3.6",
-    "uniq": "^1.0.1"
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -27,5 +16,10 @@
     "url": "https://github.com/yonikohen/yonikohen.github.io/issues"
   },
   "homepage": "https://github.com/yonikohen/yonikohen.github.io#readme",
-  "description": ""
+  "dependencies": {
+    "uuid": "^3.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
 }
