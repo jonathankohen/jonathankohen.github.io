@@ -1,25 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import './App.css';
+import "/Users/jonkohen/Desktop/restaurant-project/client/src/bootstrap.min.css"
+
+import Navbar from "./components/navbar.component";
+import ReservationsList from "./components/reservations-list.component";
+import EditReservation from "./components/edit-reservation.component";
+import CreateReservation from "./components/create-reservation.component";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="container">
+        <Navbar />
+        <br />
+        <Route path="/" exact component={ReservationsList} />
+        <Route path="/edit/:id" component={EditReservation} />
+        <Route path="/create" component={CreateReservation} />
+      </div>
+    </Router>
   );
 }
 
