@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 let name = document.getElementById("name").value;
 let date = document.getElementById("date").value;
 
