@@ -1,0 +1,80 @@
+$backgroundColor: (#f2f2f2);
+$blue: (#85a8c7);
+$darkBlue: (#1f4261);
+$gold: (#fff599);
+$hover: (#fafafa);
+
+@mixin flexSettings {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  background: $backgroundColor;
+  @include flexSettings();
+  border: 15px double $blue;
+}
+
+h1 {
+  font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
+    "Times New Roman", serif !important ;
+  font-size: 80px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 60px;
+  text-decoration: underline;
+  text-decoration-color: $gold;
+}
+
+h3 {
+  font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
+    "Times New Roman", serif;
+  font-size: 40px;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 40px;
+  color: $darkBlue;
+}
+
+a {
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond,
+    "Times New Roman", serif;
+  font-size: 36px;
+  font-style: normal;
+  font-variant: small-caps;
+  font-weight: 700;
+  line-height: 14px;
+}
+
+p {
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond,
+    "Times New Roman", serif;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+blockquote {
+  font-family: Garamond;
+  font-size: 21px;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+pre {
+  font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
+    "Times New Roman", serif;
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 18.5714px;
+}

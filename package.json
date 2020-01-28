@@ -1,0 +1,19 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio of Web Apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yonikohen/yonikohen.github.io.git"
+  },
+  "author": "Jonathan Kohen <jonathan.a.kohen@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yonikohen/yonikohen.github.io/issues"
+  },
+  "homepage": "https://github.com/yonikohen/yonikohen.github.io#readme"
+}

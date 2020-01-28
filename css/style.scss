@@ -1,0 +1,10 @@
+@import "base";
+
+.navbar-item {
+    @include flexSettings();
+    color: black;
+}
+
+#top-image {
+  border: 1rem double #1f4261;
+}
