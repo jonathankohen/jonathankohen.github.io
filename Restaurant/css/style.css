@@ -1,20 +1,20 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
 /* body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  } */
+
+body {
   margin-top: 0.5rem;
-  padding-top: 5rem; 
+  padding-top: 5rem;
   padding: 5rem;
   border: 15px double #85a8c7;
   background: #f2f2f2;
@@ -22,8 +22,6 @@ code {
   margin-left: auto;
   margin-right: auto;
   font-family: raleway, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 h1 {
   text-align: center;
@@ -34,7 +32,12 @@ h1 {
   width: 100%;
   font-optical-sizing: true;
 }
-h2 {
+.page-title {
+    color: #333333;
+    font-family: raleway-extralight;
+  }
+
+#slogan { 
   color: #85a8c7;
   font-family: great vibes;
   font-size: 60px;
@@ -57,21 +60,15 @@ h5 {
 }
 a.nav-link {
   color: #333333;
-  font-family: raleway-thinitalic; 
+  font-family: raleway-thinitalic;
   font-size: 28px;
 }
 a.nav-link:hover {
   color: #85a8c7;
-  font-family: raleway-thinitalic
-}
-.page-title {
-  color: #333333;
-  font-size: 80px;
-  font-family: raleway-extralight;
-  font-optical-sizing: true;
+  font-family: raleway-thinitalic;
 }
 #top-image {
-  border: 1rem double #1F4261;
+  border: 1rem double #1f4261;
   padding: 4px;
   border-radius: 0px;
   margin-right: auto;
@@ -83,7 +80,7 @@ a.nav-link:hover {
 #res {
   margin-bottom: 4rem;
 }
-.col{
+.col {
   display: flexbox;
   flex-direction: row;
   flex-flow: row;
@@ -91,11 +88,12 @@ a.nav-link:hover {
   padding: 0px;
   font-optical-sizing: true;
 }
-.form-label, .form-group {
+.form-label,
+.form-group {
   padding: 1rem;
 }
 .form-label {
-  background: #1F4261;
+  background: #1f4261;
   color: #ffffff;
   margin: 0.125rem;
 }
@@ -121,7 +119,7 @@ table {
   height: 100%;
 }
 thead {
-  background: #6C8FAE;
+  background: #6c8fae;
   color: #ffffff;
   padding: -20px;
 }
@@ -179,7 +177,7 @@ input:hover {
   font-family: raleway-extralight;
 }
 .btn:hover {
-  background: #1F4261;
+  background: #1f4261;
   text-decoration: none;
   color: #ffffff;
 }
@@ -195,12 +193,13 @@ td:hover {
 #name-2,
 #date-2 {
   font-weight: normal;
-  background: #9FC2E1;
+  background: #9fc2e1;
 }
 td {
   font-family: raleway-extralightitalic;
 }
-.reservation-names, input {
+.reservation-names,
+input {
   font-family: raleway-lightitalic;
 }
 #map-title {
@@ -247,13 +246,13 @@ td {
 .badge-pill {
   margin-left: 0.5em;
   background: #85a8c7;
-  color: #ffffff
+  color: #ffffff;
 }
-td.reservation-names{
-  vertical-align: middle
+td.reservation-names {
+  vertical-align: middle;
 }
-td.reservation-dates{
-  vertical-align: middle
+td.reservation-dates {
+  vertical-align: middle;
 }
 td.reservation-names.submitted-name {
   vertical-align: middle;
@@ -263,4 +262,4 @@ td.submitted-date {
 }
 .submitted {
   background: #fff599;
-} */
+}
