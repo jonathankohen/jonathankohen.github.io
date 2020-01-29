@@ -1,10 +1,11 @@
 // pages/about.js
 
-import withLayout from '../components/MyLayout.js';
-import Header from "../components/Header.js"
+import Layout from '../components/MyLayout';
 
-Header();
-
-const Page = () => <p>This is the contact page</p>;
-
-export default withLayout(Page);
+export default function Contact() {
+  return (
+    <Layout>
+      <p>This is the contact page</p>
+    </Layout>
+  );
+}

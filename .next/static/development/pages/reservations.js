@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/contact.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/reservations.js"],{
 
 /***/ "./components/Header.js":
 /*!******************************!*\
@@ -4652,21 +4652,21 @@ var assign=Object.assign.bind(Object);function g(){return assign;}Object.defineP
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fcontact&absolutePagePath=%2FUsers%2Fjonkohen%2FDesktop%2FPortfolio%2Fpages%2Fcontact.js!./":
-/*!**********************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fcontact&absolutePagePath=%2FUsers%2Fjonkohen%2FDesktop%2FPortfolio%2Fpages%2Fcontact.js ***!
-  \**********************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Freservations&absolutePagePath=%2FUsers%2Fjonkohen%2FDesktop%2FPortfolio%2Fpages%2Freservations.js!./":
+/*!********************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Freservations&absolutePagePath=%2FUsers%2Fjonkohen%2FDesktop%2FPortfolio%2Fpages%2Freservations.js ***!
+  \********************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/contact", function() {
-      var mod = __webpack_require__(/*! ./pages/contact.js */ "./pages/contact.js")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/reservations", function() {
+      var mod = __webpack_require__(/*! ./pages/reservations.js */ "./pages/reservations.js")
       if(true) {
-        module.hot.accept(/*! ./pages/contact.js */ "./pages/contact.js", function() {
-          if(!next.router.components["/contact"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/contact.js */ "./pages/contact.js")
-          next.router.update("/contact", updatedPage)
+        module.hot.accept(/*! ./pages/reservations.js */ "./pages/reservations.js", function() {
+          if(!next.router.components["/reservations"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/reservations.js */ "./pages/reservations.js")
+          next.router.update("/reservations", updatedPage)
         })
       }
       return mod
@@ -9721,25 +9721,25 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./pages/contact.js":
-/*!**************************!*\
-  !*** ./pages/contact.js ***!
-  \**************************/
+/***/ "./pages/reservations.js":
+/*!*******************************!*\
+  !*** ./pages/reservations.js ***!
+  \*******************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Contact; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Reservations; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_MyLayout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/MyLayout */ "./components/MyLayout.js");
-var _jsxFileName = "/Users/jonkohen/Desktop/Portfolio/pages/contact.js";
+var _jsxFileName = "/Users/jonkohen/Desktop/Portfolio/pages/reservations.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-// pages/about.js
+// pages/reservations.js
 
-function Contact() {
+function Reservations() {
   return __jsx(_components_MyLayout__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
@@ -9752,19 +9752,19 @@ function Contact() {
       lineNumber: 8
     },
     __self: this
-  }, "This is the contact page"));
+  }, "This is the reservations page"));
 }
 
 /***/ }),
 
-/***/ 5:
-/*!**************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fcontact&absolutePagePath=%2FUsers%2Fjonkohen%2FDesktop%2FPortfolio%2Fpages%2Fcontact.js ***!
-  \**************************************************************************************************************************************/
+/***/ 4:
+/*!************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Freservations&absolutePagePath=%2FUsers%2Fjonkohen%2FDesktop%2FPortfolio%2Fpages%2Freservations.js ***!
+  \************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fcontact&absolutePagePath=%2FUsers%2Fjonkohen%2FDesktop%2FPortfolio%2Fpages%2Fcontact.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fcontact&absolutePagePath=%2FUsers%2Fjonkohen%2FDesktop%2FPortfolio%2Fpages%2Fcontact.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Freservations&absolutePagePath=%2FUsers%2Fjonkohen%2FDesktop%2FPortfolio%2Fpages%2Freservations.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Freservations&absolutePagePath=%2FUsers%2Fjonkohen%2FDesktop%2FPortfolio%2Fpages%2Freservations.js!./");
 
 
 /***/ }),
@@ -9780,5 +9780,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[5,"static/runtime/webpack.js"]]]);
-//# sourceMappingURL=contact.js.map
+},[[4,"static/runtime/webpack.js"]]]);
+//# sourceMappingURL=reservations.js.map
