@@ -1,19 +1,31 @@
 {
-  "name": "portfolio",
+  "name": "Portfolio",
   "version": "1.0.0",
-  "description": "Portfolio of Web Apps",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yonikohen/yonikohen.github.io.git"
   },
+  "keywords": [],
   "author": "Jonathan Kohen <jonathan.a.kohen@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/yonikohen/yonikohen.github.io/issues"
   },
-  "homepage": "https://github.com/yonikohen/yonikohen.github.io#readme"
+  "homepage": "https://github.com/yonikohen/yonikohen.github.io#readme",
+  "dependencies": {
+    "isomorphic-unfetch": "^3.0.0",
+    "next": "^9.2.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1"
+  }
 }
