@@ -1,0 +1,90 @@
+@import "scss/_base.scss";
+
+body {
+  @include flexSettings();
+  background: $backgroundColor; 
+  border: 15px double $blue;
+}
+#page-title {
+  font-style: normal !important;
+}
+h1 {
+  @include flexSettings();
+  font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
+    "Times New Roman", serif !important;
+  font-size: 80px;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: 400;
+  text-decoration: underline;
+  text-decoration-color: $gold;
+}
+h3 {
+  @include flexSettings();
+  font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
+    "Times New Roman", serif;
+  font-size: 40px;
+  font-style: italic;
+  font-variant: small-caps;
+  font-weight: 400;
+  line-height: 40px;
+  // color: #346a99;
+  color: #969696;
+}
+.navbar-item {
+  @include flexSettings();
+  color: black;
+}
+#top-image {
+  border: 1rem double #1f4261;
+}
+a {
+  @include defaultFont();
+  font-weight: 700 !important;
+  font-size: 36px;
+}
+p,
+pre,
+table {
+  @include defaultFont();
+  font-size: 14px;
+}
+
+form {
+  @include defaultFont();
+  border-bottom: 8px double #85a8c7;
+  border-left: 8px double #85a8c7;
+  border-top: 8px double #4d4d4d;
+  border-right: 8px double #4d4d4d;
+}
+
+.label {
+  font-size: 18px;
+  color: black;
+}
+
+.input {
+  &:hover {
+    color: black;
+    background: $gold;
+  }
+}
+
+.btn {
+  background: $blue;
+  border: none;
+
+  &:hover {
+    color: black;
+    background: $gold;
+  }
+}
+
+blockquote {
+  font-family: Garamond;
+  font-size: 21px;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 21px;
+}

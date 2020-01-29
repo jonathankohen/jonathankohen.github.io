@@ -1,11 +1,10 @@
-// pages/about.js
+import React from "react";
 
-import Layout from '../components/MyLayout';
+const Contact = () => (
+  <selection>
+    <h1>Hey</h1>
+    <p>lorem ipsum</p>
+  </selection>
+);
 
-export default function Contact() {
-  return (
-    <Layout>
-      <p>This is the contact page</p>
-    </Layout>
-  );
-}
+export default Contact;

@@ -1,11 +1,9 @@
-// pages/menu.js
-
-import Layout from '../components/MyLayout';
+import React from "react";
 
 export default function Menu() {
   return (
-    <Layout>
+    <section>
       <p>This is the menu page</p>
-    </Layout>
+    </section>
   );
 }

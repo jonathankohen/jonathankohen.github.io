@@ -1,13 +1,12 @@
-// pages/index.js
+import React from 'react';
+import Navbar from "/Users/jonkohen/Desktop/Portfolio/components/navbar";
+import "../scss/style.scss"
 
-import fetch from 'isomorphic-unfetch';
-import Link from 'next/link';
-import Layout from '../components/MyLayout.js';
+const Index = () => (
+	<section>
+		<Navbar />
+		<h1>Hello world, I guess</h1>
+	</section>
+)
 
-export default function Index() {
-	return (
-	  <Layout>
-		<p>Hello Next.js</p>
-	  </Layout>
-	);
-  }
+export default Index
