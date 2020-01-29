@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
+    "dev": "nodemon server/index.js",
     "build": "next build",
     "start": "next start",
     "wp": "webpack && next"
@@ -22,6 +22,7 @@
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
     "babel-plugin-react-css-modules": "^5.2.6",
+    "express": "^4.17.1",
     "isomorphic-unfetch": "^3.0.0",
     "next": "^9.2.1",
     "next-sass": "^1.0.3",
@@ -39,6 +40,7 @@
     "@types/react": "^16.9.19",
     "@typescript-eslint/eslint-plugin": "^2.18.0",
     "@typescript-eslint/parser": "^2.18.0",
+    "autoprefixer": "^9.7.4",
     "babel-core": "^6.26.3",
     "babel-loader": "^8.0.6",
     "babel-preset-env": "^1.7.0",
