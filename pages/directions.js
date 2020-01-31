@@ -1,10 +1,14 @@
-// STATIC GENERATION, GOOGLE MAPS API
-import React from "react"
+/* eslint-disable react/prop-types */
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-undef */
+import React, { Component } from 'react';
+import MapContainer from "../components/directions/map.js"
 
-export default function Contact() {
-  return (
-    <section>
-      <h1>Here we areee</h1>
-    </section>
-  );
-}
+const Directions = () => (
+  <selection>
+    <h1>Come dine with us!</h1>
+    <MapContainer />
+  </selection>
+);
+
+export default Directions;

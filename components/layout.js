@@ -7,9 +7,7 @@ const layoutStyle = {
 };
 
 const Layout = props => (
-	<div style={layoutStyle}>
-		
-	</div>
+	<div style={layoutStyle}></div>
 );
 
 export default Layout

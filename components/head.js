@@ -13,3 +13,5 @@ function meta() {
         <title>The Krusty Krab</title>
     </Head>
 }
+
+export default Head
