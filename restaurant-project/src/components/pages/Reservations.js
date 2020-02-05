@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../layout/Header';
+import Form from '../layout/Form';
+import Table from '../layout/Table';
 
 export class Reservations extends Component {
     render() {
@@ -8,8 +10,8 @@ export class Reservations extends Component {
                 <Header />
                 <h1>Reservations</h1>
                 <div className="row">
-                    <div className="col"></div> {/* TODO: FORM */}
-                    <div className="col"></div> {/* TODO: TABLE */}
+                    <Form />
+                    <Table />
                 </div>
             </React-Fragment>
         );

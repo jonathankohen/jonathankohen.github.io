@@ -5,8 +5,8 @@ const headerStyle = {
     // background: '#85a8c7',
     // color: '#fff',
     textAlign: 'center',
-    borderLeft: '2px solid #fff599',
-    borderRight: '2px solid #fff599'
+    borderLeft: '8px solid #fff599'
+    // borderRight: '2px solid #fff599'
     // borderBottom: '2px solid #fff599'
     // borderTop: '2px solid #4d4d4d',
     // borderRight: '2px solid #4d4d4d'

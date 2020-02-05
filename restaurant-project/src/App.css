@@ -77,6 +77,24 @@ h2 {
     color: #969696;
 }
 
+h3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+}
+
 .navbar-item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -111,6 +129,19 @@ form {
     border-left: 8px double #85a8c7;
     border-top: 8px double #4d4d4d;
     border-right: 8px double #4d4d4d;
+    padding: 2rem;
+}
+
+table {
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    border-bottom: 8px double #85a8c7;
+    border-left: 8px double #85a8c7;
+    border-top: 8px double #4d4d4d;
+    border-right: 8px double #4d4d4d;
+    /* padding: 2rem; */
+    border-collapse: unset;
 }
 
 .label {
@@ -125,6 +156,7 @@ form {
 
 .btn {
     background: #85a8c7;
+    color: white;
     border: none;
 }
 
