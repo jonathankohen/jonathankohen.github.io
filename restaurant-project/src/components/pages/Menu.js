@@ -10,12 +10,36 @@ const topImage = {
     border: '1rem double #1f4261'
 };
 
+const whateverTheHeck = [
+    {
+        value: 'whatever'
+    },
+    {
+        value: 'whatever2'
+    }
+];
+
+const menuItems = [
+    {
+        menuItem: 'Kkrabby Ppatty',
+        price: '$1.25'
+    },
+    {
+        menuItem: 'Krabby Mmeal',
+        price: '3.50'
+    },
+    { menuItems: 'Kkrabby Patty w/ Ssea Cheese', price: '$1.50' }
+];
+
 export class Menu extends Component {
     render() {
         return (
             <React-Fragment>
                 <Header />
                 <div className="row mb-5">
+                    {whateverTheHeck.map(heck => {
+                        return <React-Fragment>{heck.value}</React-Fragment>;
+                    })}
                     <div className="col text-center">
                         <h1>Gallery Grub</h1>
                     </div>
@@ -33,13 +57,17 @@ export class Menu extends Component {
                     <div className="col">
                         <table class="table">
                             <tbody>
-                                <tr>
-                                    <td>Krabby Patty</td>
-                                    <td>$1.25</td>
-                                    <td>Krabby Meal</td>
-                                    <td>$3.50</td>
-                                </tr>
-                                <tr>
+                                {menuItems.map(heck => {
+                                    return (
+                                        <React-Fragment>
+                                            <tr>
+                                                <td>{heck.menuItem}</td>
+                                                <td>{heck.price}</td>
+                                            </tr>
+                                        </React-Fragment>
+                                    );
+                                })}
+                                {/* <tr>
                                     <td>
                                         &emsp;&emsp;
                                         <i>
@@ -89,7 +117,7 @@ export class Menu extends Component {
                                     <td></td>
                                     <td>&emsp;&emsp;w/sauce</td>
                                     <td>$2.50</td>
-                                </tr>
+                                </tr> */}
                             </tbody>
                         </table>
                     </div>

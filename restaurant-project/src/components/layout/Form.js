@@ -29,7 +29,7 @@ export class Form extends Component {
                         <div className="col-sm-10">
                             <DatePicker
                                 className="form-control"
-                                selected={this.state.startDate}
+                                // selected={this.state.startDate}
                                 onChange={this.handleChange}
                             />
                         </div>
