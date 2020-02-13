@@ -2,12 +2,21 @@ $(function() {
   $("#datepicker").datepicker();
 });
 
-function handleSubmit() {
+function handleSubmit(event) {
+  event.preventDefault();
   const inputName = document.getElementById("inputName").value;
   const inputDate = document.getElementById("datepicker").value;
-  const inputTime = document.getElementById("inputTime").value;
+  const inputTime = document.getElementById("timepicker").value;
 
-  alert(
-    `<h2>Thank you, ${inputName}!</h2><p>Your reservation for ${inputDate} at ${inputTime} has been confirmed.</p>`
-  );
+  document.getElementById("thanks").innerHTML = "Thank you, " + inputName + "!";
+
+  document.getElementById("confirmation").innerHTML =
+    "Your reservation request for " +
+    inputDate +
+    " at " +
+    inputTime +
+    " will be reviewed by the Krusty Krab staff.";
+
+  document.getElementById("confirmation2").innerHTML =
+    "We will be in touch shortly with a confirmation.";
 }
