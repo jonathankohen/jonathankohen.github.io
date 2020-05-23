@@ -5,7 +5,7 @@ import Header from './components/layout/Header';
 import About from './components/pages/About';
 import Services from './components/pages/Services';
 import Portfolio from './components/pages/Portfolio';
-import Skills from './components/pages/Skills';
+// import Skills from './components/pages/Skills';
 import Contact from './components/pages/Contact';
 import Footer from './components/layout/Footer';
 import PopUp from './components/hoc/popUp';
@@ -20,7 +20,7 @@ class App extends Component {
         <About />
         <Services />
         <Portfolio />
-        <Skills />
+        {/* <Skills /> */}
         <Contact />
 
         <Footer />

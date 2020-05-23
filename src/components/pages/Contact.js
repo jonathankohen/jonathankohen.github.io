@@ -8,7 +8,7 @@ const Contact = () => {
           <div className="book__form">
             <form action="#" className="form">
               <div className="u-margin-bottom-medium">
-                <h2 className="heading-secondary">Start booking now</h2>
+                <h2 className="heading-secondary">Contact</h2>
               </div>
               <div className="form__group">
                 <input
@@ -34,7 +34,31 @@ const Contact = () => {
                   Email address
                 </label>
               </div>
-              <div className="form__group u-margin-bottom-medium">
+              <div className="form__group">
+                <input
+                  type="text"
+                  className="form__input"
+                  placeholder="Subject"
+                  id="subject"
+                  required
+                />
+                <label htmlFor="name" className="form__label">
+                  Subject
+                </label>
+              </div>
+              <div className="form__group">
+                <input
+                  type="text"
+                  className="form__input"
+                  placeholder="Message"
+                  id="message"
+                  required
+                />
+                <label htmlFor="name" className="form__label">
+                  Message
+                </label>
+              </div>
+              {/* <div className="form__group u-margin-bottom-medium">
                 <div className="form__radio-group">
                   <input
                     type="radio"
@@ -59,9 +83,9 @@ const Contact = () => {
                     Large tour group
                   </label>
                 </div>
-              </div>
+              </div> */}
               <div className="form__group">
-                <button className="btn btn--green">Next step →</button>
+                <button className="btn btn--green">Send message →</button>
               </div>
             </form>
           </div>
